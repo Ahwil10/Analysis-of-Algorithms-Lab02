@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+void fibonacciIterative(int n) {
+    long long a = 0, b = 1, next;
+    for (int i = 0; i < n; i++) {
+        cout << a << " ";
+        next = a + b;
+        a = b;
+        b = next;
+    }
+}
